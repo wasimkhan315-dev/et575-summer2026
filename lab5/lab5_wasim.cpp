@@ -92,8 +92,37 @@ int main() {
     int a = password.length();
     int b = a - 2 ;
     password.replace(b,3,"NONE");
-      
-    
+
+
+    cout << "\n EXERCISE " << endl;
+    string new_word;
+    cout << "Enter word " << endl;
+    cin >> new_word;
+
+    // find and print forth character
+    cout << "The forth character of the word is " << new_word[4] << endl;
+
+
+    // Print length
+    cout << "The length of the word is " << new_word.length() << endl;
+
+    // replace
+    cout << "Word before replacement is " << new_word << endl;
+    new_word.replace(1,3,"--$--");
+    cout << "Word after replacement is " << new_word << endl;
+
+
+    // take away 2 characters;
+    new_word.erase(new_word.length() -2, 2);
+    cout << " The word after taking away two characters is now " << new_word << endl;
+ 
+
+
+
+
+
+
+
 
 
 
@@ -101,4 +130,16 @@ int main() {
 
     return 0;
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
