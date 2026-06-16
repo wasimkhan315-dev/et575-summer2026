@@ -20,9 +20,25 @@ int main(){
     int s1 = getpositive();
     int s2 = getpositive();
     float h = hypotenuse(s1, s2);
-    printresult(s1,s1,h)
+    printresult(s1,s1,h);
+
+    cout << "\n example 5: random function";
+    randomnumber();
+    cout << endl;
+    randomnumber();
+
+    cout << "\nexample 6: range of random function" << endl;
+    int r = random_neg5_10();
+    cout<<r<<endl;
+    srand(time(0));
+    int timeValue = randomNumber();
+    float distance = fallingdistance(timeValue);
+
+    output(timeValue, distance);
+    cout << endl;
+
     
-    return 0
+    return 0;
 
    }
 

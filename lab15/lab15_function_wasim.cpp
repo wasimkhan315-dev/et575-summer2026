@@ -6,6 +6,7 @@ Lab 15: recursive function ,built function
 
 #include <iostream>
 using namespace std;
+const float gravity = 9.8;
 //example 1 : recursive function
 // function calls itself during the program
 
@@ -72,3 +73,44 @@ int getpositive(){
 // exmaple 4: built in function
 // program to calculate hypotense
 // function to calculate the hypotenuse
+#include <cmath>
+
+float hypotenuse(int side1, int side2){
+return sqrt(pow(side1, 2) + pow(side2, 2));
+
+}
+// print result
+void printresult(int side1, int side2, float hyp){
+    cout << "The hypotenuse of a right triangle with sides" << side1 << side2 << " is " << hyp << endl;
+}
+
+
+#include<cstdlib>
+#include<time.h>
+
+// example 5
+
+void randomnumber(){
+    cout <<rand<<endl;
+    cout <<rand<< endl;
+    cout <<rand<<endl;
+}
+
+// exmple 6 random number between -5 and 10 inclusive
+int random_neg5_10(){
+    srand(time(0));
+    return (-5 + rand()%16);
+}
+
+// EXERCISE
+int randomNumber(){
+    return rand() % 100 + 1;
+}
+
+float fallingdistance(int time){
+    return 0.5 * gravity * pow(time,2);
+}
+
+void output(int time, float distance){
+    cout << "The falling distance in " << time << " seconds is " << distance << "meters" << endl;
+}
